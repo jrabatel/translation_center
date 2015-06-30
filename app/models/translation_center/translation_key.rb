@@ -86,7 +86,7 @@ module TranslationCenter
     def create_default_translation
       # translation = self.translations.build(value: self.name.to_s.split('.').last.titleize,
       #                                       lang: :en, status: 'accepted')
-      translation = self.translations.build(value: '',
+      translation = self.translations.build(value: 'default translation',
                                             lang: :en, status: 'accepted')
       translation.translator = TranslationCenter.prepare_translator
 
